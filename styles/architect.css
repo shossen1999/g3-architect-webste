@@ -13,17 +13,17 @@
 .btn-primary {
     border-radius: 8px;
     background: #FF900E;
-    padding:20px 25px ;
+    padding: 20px 25px;
     color: #FFF;
 
-   
-border: 0;
-/* text-align: center; */
 
-font-size: 1.25rem;
-/* font-style: normal; */
-font-weight: 600;
-/* line-height: normal; */
+    border: 0;
+    /* text-align: center; */
+
+    font-size: 1.25rem;
+    /* font-style: normal; */
+    font-weight: 600;
+    /* line-height: normal; */
 
 }
 
@@ -94,37 +94,100 @@ nav li a {
     /* line-height: 26px; */
 }
 
-.banner img{
+.banner img {
     margin-top: 20px;
     width: 100%;
 }
 
+
+/* main section */
+main {
+    max-width: 1440px;
+    margin: 70px auto;
+
+}
+
+.teams-container {
+    display: flex;
+    align-items: center;
+    /* gap:70px; */
+}
+
+.teams-img-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.teams-content {
+    padding-left: 70px;
+    padding-right: 70px;
+}
+
+.teams-title {
+    /* width: 468px; */
+    font-weight: 700;
+    font-size: 2.8rem
+}
+
+.teams-title .Quick-list {
+    color: #727272;
+
+}
+
+.teams-title .of-Our {
+    color: #131313;
+
+}
+
+.teams-title .Features {
+    color: #FF900E;
+
+}
+
+
+.teams-description {
+    /* width: 537px; */
+    color: #727272;
+
+
+    font-weight: 400;
+
+}
+
+
 /* responsive media query */
 
 /* Mobile device */
- @media screen and (max-width:576px)
-{
-    header{
+@media screen and (max-width:576px) {
+    header {
         padding: 20px;
     }
 
-    nav{
+    nav ,
+    .teams-container{
         flex-direction: column;
+    }
+
+    .teams-img-container{
+        grid-template-columns: 1fr;
+
+    }
+
+    .teams-content {
+        padding-left: 20px;
+        padding-right: 20px;
     }
 }
 
 /* tablet */
 
-@media screen and (min-width:576px) and (max-width:960px)
-
-{
-    header{
+@media screen and (min-width:576px) and (max-width:960px) {
+    header {
         padding: 50px;
     }
 
-    nav{
+    nav,
+    .teams-container {
         flex-direction: column;
     }
 }
-
-
